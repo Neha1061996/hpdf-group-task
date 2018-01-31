@@ -33,6 +33,7 @@ const styles = {
 
 
 
+
 const Election = () => (
 <div>
   <div>
@@ -64,6 +65,9 @@ const Election = () => (
 	 <Button type="primary"style={{marginLeft:750}}>About Us</Button></span>
   </Paper>
   </div>
+  
+  
+	
   </div>
 );
 
