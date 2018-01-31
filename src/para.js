@@ -10,7 +10,7 @@ const style = {
   margin: 100,
   textAlign: 'center',
   display: 'inline-block',
-  backgroundColor:'#1A237E',
+  backgroundColor:'#E91E63',
 };
 
 

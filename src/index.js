@@ -3,18 +3,16 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import App from './App'
 import Left from './left';
-import Paragraph from './paragraph';
-//import Right from './right';
 import 'antd/dist/antd.css';
 import './index.css';
 import { Carousel } from 'antd';
 import Para from './para';
+//import Paperi from './paper';
 
 
 
 ReactDOM.render(<MuiThemeProvider><App/></MuiThemeProvider>, document.getElementById('root'));
 ReactDOM.render(<MuiThemeProvider><Left/></MuiThemeProvider>, document.getElementById('left'));
-//ReactDOM.render(<MuiThemeProvider ><Right/ ></MuiThemeProvider>, document.getElementById('right'));
 ReactDOM.render(
 <div>
   <Carousel autoplay>
@@ -23,6 +21,10 @@ ReactDOM.render(
     <div><img src="http://images.newindianexpress.com/uploads/user/imagelibrary/2017/12/8/original/EVM_e.jpg"/></div>
     <div><img src="http://media.santabanta.com/images/picsms/2013/sms-4424.jpg"/></div>
   </Carousel>
-  <p>hjgkj</p></div>
+  <h1><b>BE BRIGHT Vote For WHAT Is RIght</b></h1>
+  <img src="http://eci.nic.in/eci/images/nvd2018.jpg"/><div></div>
+  <img src="http://eci.nic.in/eci/images/eci-newsletter_15122015.jpg"/>
+  <img src="http://eci.nic.in/eci/images/AE2018.jpg"/></div>
 , document.getElementById('left'));
 ReactDOM.render(<MuiThemeProvider><Para/></MuiThemeProvider>, document.getElementById('right'));
+//ReactDOM.render(<MuiThemeProvider><Paperi/></MuiThemeProvider>, document.getElementById('left'));

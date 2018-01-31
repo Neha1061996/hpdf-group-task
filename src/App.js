@@ -39,7 +39,7 @@ const Election = () => (
     
     <Paper style={style} zDepth={1} >
 	
-	<span style={{fontFamily: 'Risque',fontSize:40, }}>
+	<span style={{fontFamily: 'Risque',fontSize:40, backgroundColor:'#E91E63'}}>
 	<b> E-ELECTION APP</b>
 	<span style={{marginLeft:700}}><FlatButton label="LOGIN"  />
 	<FlatButton label="REGISTER" /></span>
