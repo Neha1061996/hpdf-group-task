@@ -7,8 +7,51 @@ import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import 'antd/dist/antd.css';
-//import './index.css';
-import { Button } from 'antd';
+import { Menu, Dropdown, Button } from 'antd';
+
+
+const home= (
+  <Menu>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="#">HOME</a>
+    </Menu.Item>
+	</Menu>
+);	
+
+const menu= (
+  <Menu>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/eci_main1/ByeElec2018/rajasthan.html">Current election </a>
+    </Menu.Item>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/archive/">Past Election</a>
+    </Menu.Item>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/eci_main1/FutureElection.aspx">Future Election</a>
+    </Menu.Item>
+  </Menu>
+);
+
+const result = (
+  <Menu>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/eci_main1/bye_elec_results_2018.html">BYE BYE elections Result 2018 </a>
+    </Menu.Item>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/eci_main1/bye_elec_results_2017.html">BYE elections Result 2017</a>
+    </Menu.Item>
+    <Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eciresults.nic.in/">State Assembly election 2017</a>
+    </Menu.Item>
+	<Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/eci_main1/bye_elec_results_2016.html">BYE elections Result 2016</a>
+    </Menu.Item>
+	<Menu.Item>
+      <a target="_blank" rel="noopener noreferrer" href="http://eci.nic.in/eci_main1/ElectionStatistics.aspx">General election Results & statics</a>
+    </Menu.Item>
+  </Menu>
+);
+
 
 
 const style = {
@@ -58,11 +101,17 @@ const Election = () => (
   </div>
   <div>
   <Paper style={styles} zDepth={5} >
-  <span > <Button type="primary" style={{marginLeft:10}}>Home</Button>
-   <Button type="primary"style={{marginLeft:50}}>Election</Button>
-    <Button type="primary"style={{marginLeft:50}}>Result</Button>
-	 <Button type="primary"style={{marginLeft:50}}>FAQs</Button>
-	 <Button type="primary"style={{marginLeft:750}}>About Us</Button></span>
+  <span ><Dropdown overlay={home} placement="topRight">
+      <Button type="primary"style={{marginLeft:10, backgroundColor:'#F44336'}}>HOME</Button>
+    </Dropdown>
+	<Dropdown overlay={menu} placement="topRight">
+      <Button type="primary"style={{marginLeft:60, backgroundColor:'#F44336'}}>ELECTIONS</Button>
+    </Dropdown>
+	<Dropdown overlay={result} placement="topRight">
+      <Button type="primary"style={{marginLeft:60, backgroundColor:'#F44336'}}>RESULT</Button>
+    </Dropdown>
+	<Button type="primary"style={{marginLeft:60, backgroundColor:'#F44336'}} onclick={ <a  href="http://eci.nic.in/eci_main1/the_function.aspx">About us</a>}>About us</Button>
+	</span>
   </Paper>
   </div>
   
